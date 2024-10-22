@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Pencatatan Penjualan</title>
+  </head>
+  <body>
+    <h1>Input Data Penjualan</h1>
+    <form action="penjualan.php" method="POST">
+      <label for="product_name">Nama Produk:</label><br />
+      <input
+        type="text"
+        id="product_name"
+        name="product_name"
+        required
+      /><br /><br />
+
+      <label for="price">Harga (Rp):</label><br />
+      <input type="number" id="price" name="price" required /><br /><br />
+
+      <label for="quantity">Jumlah Terjual:</label><br />
+      <input type="number" id="quantity" name="quantity" required /><br /><br />
+
+      <input type="submit" value="Tambah Penjualan" />
+    </form>
+
+    <hr />
+    <h2>Laporan Penjualan</h2>
+    <a href="penjualan.php">Lihat Laporan Penjualan</a>
+    <?php include 'pejualan.php'; ?>
+  </body>
+</html>
